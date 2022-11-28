@@ -1,10 +1,10 @@
-.row {
+/* .row {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.row > button {
+.row>button {
   margin-left: 4px;
   margin-right: 8px;
 }
@@ -76,4 +76,10 @@
   width: 0%;
   opacity: 1;
   transition: 0s;
+} */
+
+.gridItem {
+  padding: 5px;
+  display: flex;
 }
+

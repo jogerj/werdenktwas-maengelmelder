@@ -1,9 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import maengelmelderReducer from '../features/maengelmelder/maengelmelderSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    maengelmelder: maengelmelderReducer,
   },
 });
 
