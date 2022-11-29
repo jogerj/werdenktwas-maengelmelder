@@ -6,13 +6,14 @@ The interface uses [MUI](https://mui.com) libraries.
 
 The purpose of this project is to provide an interface to interact with the [mängelmelder.de](https://mäengelmelder.de) APIs.
 
-# Features
-* The user can mark individual messages with an asterisk.
-* Flagged messages are displayed in the main list and in a separate "Flagged messages" section.
-* Flagged messages persist across browser sessions.
+# Features / User Stories
+* The user can mark individual messages with a star.
+* Marked messages are displayed in the main list and in a separate "Gemerkte Meldungen" section.
+* Marked messages persist across browser sessions.
 * A global "refresh" button updates the data of all displayed messages.
 * The page should also look reasonable on a cell phone.
-The structure of the app should be such that it can later be extended to include functions for editing messages and a detailed view. The page should also look reasonable on a cell phone.
+
+The structure of the app should be such that it can later be extended to include functions for editing messages and a detailed view. 
 
 
 
