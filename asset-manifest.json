@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/werdenktwas-maengelmelder/static/css/main.a2d43ac3.css",
-    "main.js": "/werdenktwas-maengelmelder/static/js/main.e5200376.js",
+    "main.js": "/werdenktwas-maengelmelder/static/js/main.9a64b5a8.js",
     "static/js/787.8e5b005f.chunk.js": "/werdenktwas-maengelmelder/static/js/787.8e5b005f.chunk.js",
     "index.html": "/werdenktwas-maengelmelder/index.html",
     "main.a2d43ac3.css.map": "/werdenktwas-maengelmelder/static/css/main.a2d43ac3.css.map",
-    "main.e5200376.js.map": "/werdenktwas-maengelmelder/static/js/main.e5200376.js.map",
+    "main.9a64b5a8.js.map": "/werdenktwas-maengelmelder/static/js/main.9a64b5a8.js.map",
     "787.8e5b005f.chunk.js.map": "/werdenktwas-maengelmelder/static/js/787.8e5b005f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2d43ac3.css",
-    "static/js/main.e5200376.js"
+    "static/js/main.9a64b5a8.js"
   ]
 }
