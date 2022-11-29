@@ -1,9 +1,12 @@
+import RefreshIcon from '@mui/icons-material/Refresh';
+import IconButton from '@mui/material/IconButton';
 import CircularProgress from '@mui/material/CircularProgress';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Slide from '@mui/material/Slide';
 import Modal from '@mui/material/Modal';
 import React, { useEffect, useState } from 'react';
+import Tooltip from '@mui/material/Tooltip';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import ReportPagePanel from './components/ReportPagePanel';
 import styles from './Maengelmelder.module.css';
@@ -21,12 +24,19 @@ export function Maengelmelder(): ReturnType<React.FC> {
 
     const [grid, setGrid] = useState<any[]>([]);
     const [bookmarkPanels, setBookmarkPanels] = useState<any[]>([]);
+    const [refreshing, setRefreshing] = useState<boolean>(false);
 
 
     useEffect(() => {
         // load data for first load;
         dispatch(refreshAllAsync());
     }, [dispatch])
+
+
+    useEffect(() => {
+        setRefreshing(false);
+    }, [store.data])
+
 
     useEffect(() => {
         // generate grid when data changes
@@ -97,8 +107,8 @@ export function Maengelmelder(): ReturnType<React.FC> {
                         </Grid>
                         <Grid item xs={12}>
                             <div style={{ width: "100%", overflow: "auto", display: "flex" }}>
-                                {bookmarkPanels.map((panel, index) => 
-                                    <div style={{margin: 12, width: 'max-content'}} key={index}>
+                                {bookmarkPanels.map((panel, index) =>
+                                    <div style={{ margin: 12, width: 'max-content' }} key={index}>
                                         {panel}
                                     </div>
                                 )}
@@ -121,6 +131,28 @@ export function Maengelmelder(): ReturnType<React.FC> {
                     <Grid item xs={12}>
                         <Typography variant='h3' color={'whitesmoke'}>
                             Alle Meldungen
+                            <Tooltip title="Refresh all data">
+                                <IconButton
+                                    onClick={() => {
+                                        dispatch(refreshAllAsync())
+                                        setRefreshing(true);
+                                    }}
+                                    sx={{ margin: 1, padding: 1 }}
+                                >
+                                    <RefreshIcon fontSize='large' sx={{
+                                        color: 'white',
+                                        animation: `${refreshing ? 'spin 1s linear infinite' : 'none'}`,
+                                        "@keyframes spin": {
+                                            "0%": {
+                                                transform: "rotate(0deg)",
+                                            },
+                                            "100%": {
+                                                transform: "rotate(360deg)",
+                                            }
+                                        },
+                                    }} />
+                                </IconButton>
+                            </Tooltip>
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>

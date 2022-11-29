@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# About this project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+
+The interface uses [MUI](https://mui.com) libraries.
+
+The purpose of this project is to provide an interface to interact with the [mängelmelder.de](https://mäengelmelder.de) APIs.
+
+# Features
+* The user can mark individual messages with an asterisk.
+* Flagged messages are displayed in the main list and in a separate "Flagged messages" section.
+* Flagged messages persist across browser sessions.
+* A global "refresh" button updates the data of all displayed messages.
+* The page should also look reasonable on a cell phone.
+The structure of the app should be such that it can later be extended to include functions for editing messages and a detailed view. The page should also look reasonable on a cell phone.
+
+Translated with www.DeepL.com/Translator (free version)
+
+
+
+<details><summary>Create-React-App Documentations</summary>
 
 ## Available Scripts
 
@@ -44,3 +62,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+</details>
