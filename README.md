@@ -14,8 +14,6 @@ The purpose of this project is to provide an interface to interact with the [mä
 * The page should also look reasonable on a cell phone.
 The structure of the app should be such that it can later be extended to include functions for editing messages and a detailed view. The page should also look reasonable on a cell phone.
 
-Translated with www.DeepL.com/Translator (free version)
-
 
 
 <details><summary>Create-React-App Documentations</summary>
