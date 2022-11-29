@@ -157,9 +157,14 @@ export function Maengelmelder(): ReturnType<React.FC> {
                     </Grid>
                     <Grid item xs={12}>
                         {grid.length
-                            ? <Grid container className={styles.grid} spacing={'auto'} rowSpacing={3} sx={{ margin: 'auto' }}
+                            ? <Grid container className={styles.grid} spacing={'auto'} rowSpacing={3}
+                                sx={{ margin: 'auto', padding: 'auto',
+                                    display: 'grid',
+                                    gridGap: '10px',
+                                    gridTemplateColumns: 'repeat(auto-fill, 400px)'
+                            }}
+                                justifyContent="space-evenly"
                                 direction="row"
-                                justifyContent="space-around"
                                 alignItems="center">
                                 {grid}
                             </Grid>

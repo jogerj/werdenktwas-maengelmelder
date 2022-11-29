@@ -71,7 +71,7 @@ export default function ReportPagePanel(props: ReportPagePanelProps): ReturnType
 
     return (
         <>
-            <Card sx={{ height: '600px', width: '400px', display: 'flex', justifyContent: 'start', flexDirection: 'column' }}>
+            <Card sx={{ height: '600px', width: '400px', minWidth:'400px', display: 'flex', justifyContent: 'start', flexDirection: 'column' }}>
                 <CardHeader
                     sx={{ height: '15%' }}
                     avatar={
